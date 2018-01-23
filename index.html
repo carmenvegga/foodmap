@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>FoodMap</title>
+</head>
+
+<body>
+
+  <section class="main text-center">
+    <div class="col-sm-12">
+      <div class="splash-foodmap">
+        <h1 class="display-4">Foodmap</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter">
+    <div class="main-foodmap" style="display:none;">
+      <div class="main-title">
+        <h1 class="display-4 text-center">Foodmap</h1>
+      </div>
+
+      <!--<div class="map-filter text-center">
+        <img src="assets/images/maps.png" class="img-responsive img-thumbnail" alt="google-maps">
+      </div>
+            He cambiado la captura, por el iframe de maps
+      -->
+
+      <div class="container map-filter col-sm-12">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7525.865531800524!2d-99.18046147347262!3d19.41531074757661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4489e635e3%3A0xed1c076e8bc9b8e7!2sCondesa%2C+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1516635597986"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="main-filter-text">
+        <h3 class="text-center">Comida cerca de ti</h3>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="¿Qué estás buscando?" class="form-control" aria-label="Text input with dropdown button">
+        <div class="input-group-append" id="menu-link">
+          <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <!-- <span class="glyphicons glyphicons-search"></span> -->
+          </button>
+          <div class="dropdown-menu">
+            <button type="button" class="dropdown-item btn btn-link" data-toggle="modal" data-target="#myModal">
+              Sopa
+            </button>
+            <button type="button" class="dropdown-item btn btn-link" data-toggle="modal" data-target="#myModal2">
+              Ensalada
+            </button>
+            <button type="button" class="dropdown-item btn btn-link" data-toggle="modal" data-target="#myModal3">
+              Pizza y pasta
+            </button>
+            <button type="button" class="dropdown-item btn btn-link" data-toggle="modal" data-target="#myModal4">
+              Sushi
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row img-container">
+          <div class="col-6 img-column">
+            <a type="button" class="img-menu btn btn-link" data-toggle="modal" data-target="#myModal">
+                <img src="assets/images/soup.jpg" class="image-responsive img-fluid img-w" alt="">
+            </a>
+          </div>
+          <div class="col-6 img-column">
+            <a type="button" class="img-menu btn btn-link" data-toggle="modal" data-target="#myModal2">
+                <img src="assets/images/salad.jpeg" class="image-responsive img-fluid img-w" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row img-container">
+          <div class="col-6 img-column">
+            <a type="button" class="img-menu btn btn-link" data-toggle="modal" data-target="#myModal3">
+              <img src="assets/images/pizza.jpeg" class="image-responsive img-fluid img-w" alt="">
+            </a>
+          </div>
+          <div class="col-6 img-column">
+            <a type="button" class="img-menu btn btn-link" data-toggle="modal" data-target="#myModal4">
+              <img src="assets/images/sushi.jpg" class="image-responsive img-fluid img-w" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <section class="container-modal-food-1">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="pizza">Sopa y caldos</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-map">
+                <img src="assets/images/maps.png" class="img-responsive img-thumbnail" alt="google-maps">
+              </div>
+              <div class="modal-body">
+                <h4>Ubicación</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illo id necessitatibus, quas consectetur atque.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-block btn-outline-danger">Pedir ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-modal-food-2">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal2">
+
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="pizza">Ensaladas</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-map">
+                <img src="assets/images/maps.png" class="img-responsive img-thumbnail" alt="google-maps">
+              </div>
+              <div class="modal-body">
+                <h4>Ubicación</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illo id necessitatibus, quas consectetur atque.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-block btn-outline-danger">Pedir ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-modal-food-3">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal3">
+
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="pizza">Pizza y pasta</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-map">
+                <img src="assets/images/maps.png" class="img-responsive img-thumbnail" alt="google-maps">
+              </div>
+              <div class="modal-body">
+                <h4>Ubicación</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illo id necessitatibus, quas consectetur atque.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-block btn-outline-danger">Pedir ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-modal-food-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal4">
+
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="pizza">Sushi</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-map">
+                <img src="assets/images/maps.png" class="img-responsive img-thumbnail" alt="google-maps">
+              </div>
+              <div class="modal-body">
+                <h4>Ubicación</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illo id necessitatibus, quas consectetur atque.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-block btn-outline-danger">Pedir ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <!--
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQJ_JdDGnqn6_th28ew_vCxqLUPiO5H4&libraries=places"></script>
+-->
+</body>
+
+</html>

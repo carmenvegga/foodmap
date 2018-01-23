@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.splash-foodmap {
+  width: 100%;
+  height: 100em;
+  background-color: #2b2b2b;
+  color: #fba705;
+}
+.splash-foodmap>h1 {
+  text-align: center;
+  padding-top: 50%;
+}
+
+.main-foodmap {
+  width: 100%;
+  margin: 0 auto;
+  height: 100em;
+  background-color: #2b2b2b;
+  color: #fba705;
+}
+
+.input-group {
+  padding: 5%;
+  margin-top: 5%;
+}
+
+.main-title > h1 {
+  padding-top: 5%;
+}
+.map-filter {
+  margin-top: 5%;
+  width: 100%;
+}
+.main-filter-text {
+  margin-top: 5%;
+}
+.main-input {
+  padding: 3% 15%;
+}
+
+.modal-panel {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.modal-title {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+.modal-map {
+  padding: 5%;
+  margin-top: 5%;
+  width: 100%;
+}
+.img-menu {
+  display: flex;
+  padding: 0;
+}
+.img-container {
+  display: flex;
+  flex: 1;
+}
+.img-w {
+  width: 100%;
+}
+.img-column {
+  padding: 0;
+}
+.map {
+  width: 100%;
+  height: 15em;
+}
